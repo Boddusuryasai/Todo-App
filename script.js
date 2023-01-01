@@ -63,13 +63,13 @@ function Addtask() {
     data.push(newtask);
     localStorage.setItem("todos", JSON.stringify(data));
     ulElement.innerHTML = "";
-    render(data);
-    console.log(data);
+    render(data); 
+    todoInput.value=""
+   
 }
 function changeStatus(labelid, liElementid, checkBoxId) {
     let box = document.getElementById(checkBoxId);
     let box2 = document.getElementById(labelid);
-    console.log(box, box.checked);
     if (!box.checked) {
         data.forEach((ele) => {
             let eleid = "li" + ele.id;
