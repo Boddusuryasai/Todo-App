@@ -9,4 +9,4 @@ This is Todo App where You can add new todos , delete todos and check it as done
 
  App Image :
 
- ![Image](./Todo-app.PNG)
+ ![Image](./Todo.PNG)
