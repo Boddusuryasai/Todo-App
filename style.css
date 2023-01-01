@@ -20,6 +20,13 @@
 .text-center{
     text-align: center;
 }
+.todo-icon{
+  background-color: #d88727;
+    vertical-align: middle;
+    color: white;
+    padding: 2px;
+    border-radius: 6px;
+}
 input[type=text]{
    width: 90%;
     padding: 10px 10px;
@@ -55,6 +62,9 @@ li div{
     margin-left: 10px;
     border-radius: 10px;
 
+}
+li div i{
+  color:#d88727
 }
 .checked {
     text-decoration: line-through;
