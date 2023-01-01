@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b9330691ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Todo-App</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="main">
+          <h1 class="text-center">Todo App  <i class="fa-solid fa-list-check"></i> </i></h1>
+          <h1 class="text-center">
+            Create <span class="create-task-heading-subpart">Todo</span>
+          </h1>
+          <div class="text-center" >
+            <input
+              type="text"
+              id="todoUserInput"
+              placeholder="Kya karenge...?"
+            />
+            <button class="button" id="addTodoButton">Add</button>
+          </div>
+          <h1>
+            My <span class="text-center">Todo's</span>
+          </h1>
+          <ul id="todoItemsContainer">
+          </ul>
+        </div>
+      
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
