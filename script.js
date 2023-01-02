@@ -1,12 +1,16 @@
 let todoInput = document.getElementById("todoUserInput");
 let addButton = document.getElementById("addTodoButton");
 let ulElement = document.getElementById("todoItemsContainer");
+let count = document.getElementById("count");
 let data = [];
 function render() {
+   
     if (JSON.parse(localStorage.getItem("todos")) === null) {
+        count.innerText =  " "
         return;
     } else {
         data = JSON.parse(localStorage.getItem("todos"));
+        count.innerText =  data.length
         data.map((ele) => {
             let liElementid = "li" + ele.id;
             let checkBoxId = "check" + ele.id;
@@ -32,7 +36,6 @@ function render() {
             div2.appendChild(label);
             div2.appendChild(icon);
             ulElement.appendChild(li);
-
             check.onclick = function () {
                 changeStatus(labelId, liElementid, checkBoxId);
             };
